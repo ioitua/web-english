@@ -1,0 +1,19 @@
+{
+  "name": "ioitua-web-english",
+  "version": "0.0.1",
+  "description": "All you need to know about English. Article describing beutiful English world",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ioit",
+    "ioitua",
+    "web",
+    "technologies",
+    "english",
+    "task"
+  ],
+  "author": "Viktor Yakubiv (www.yakubiv.com)",
+  "license": "MIT"
+}
