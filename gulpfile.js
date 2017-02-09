@@ -36,7 +36,8 @@ gulp.task('css', () => {
 
 gulp.task('html', () => {
   return gulp.src('src/index.html')
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public'))
+    .on('end', browserSync.reload);
 });
 
 gulp.task('build', (cb) => {
