@@ -27,7 +27,3 @@ Thumbs.db
 # Folders to ignore
 bower_components
 node_modules
-/app/bundle/*
-/app/assets/*
-/public
-/test
