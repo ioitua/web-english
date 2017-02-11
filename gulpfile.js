@@ -40,10 +40,16 @@ gulp.task('html', () => {
     .on('end', browserSync.reload);
 });
 
+gulp.task('images', () => {
+  return gulp.src('src/images/**')
+    .pipe(gulp.dest('public/images'))
+    .on('end', browserSync.reload);
+});
+
 gulp.task('build', (cb) => {
   runSequence(
     'clean',
-    ['css', 'html'],
+    ['css', 'html', 'images'],
     cb
   );
 });
