@@ -1,0 +1,75 @@
+/*
+ * General
+ */
+
+html {
+  font: 16px/1.5 Georgia, "Times New Roman", Times, serif;
+  color: #212121;
+  background: #fff;
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+ * Paragraphs
+ */
+
+p {
+  margin: 0 0 1rem;
+}
+
+
+/*
+ * Headings
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem;
+  font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/*
+ * Links
+ */
+
+a {
+  color: #303F9F;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #303F9F; /* TODO: make color darken */
+}
+
+
+/* All images responsive by default */
+
+img {
+  max-width: 100%;
+}

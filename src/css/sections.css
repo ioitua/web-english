@@ -1,0 +1,13 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 50vh;
+  background: #212121 no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.article-header {
+  min-height: 100vh;
+}
