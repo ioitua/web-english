@@ -1,0 +1,23 @@
+#general > .section-header {
+  background-image: url(../images/covers/bicycles.jpg);
+}
+
+#cousin > .section-header {
+  background-image: url(../images/covers/tea.jpg);
+}
+
+#famous-people > .section-header {
+  background-image: url(../images/covers/books.jpg);
+}
+
+#geography > .section-header {
+  background-image: url(../images/covers/globes.jpg);
+}
+
+#heritage > .section-header {
+  background-image: url(../images/covers/cab.jpg);
+}
+
+#quotes > .section-header {
+  background-image: url(../images/covers/type.jpg);
+}
