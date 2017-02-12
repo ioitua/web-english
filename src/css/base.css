@@ -89,8 +89,33 @@ blockquote > footer {
 }
 
 
-/* All images responsive by default */
+/*
+ * Images
+ *
+ * All images responsive by default
+ */
 
 img {
   max-width: 100%;
+}
+
+/*
+ * Figures
+ *
+ * Reset default styles
+ */
+
+figure {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+figure img {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+figcaption {
+  margin: 0;
+  padding: 0;
 }
