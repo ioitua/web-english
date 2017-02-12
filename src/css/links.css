@@ -1,0 +1,49 @@
+/**
+ * Links
+ *
+ *  Additional styles for links formatting
+ */
+
+
+/**
+ * Muted links
+ *
+ * Inherit text colors, are invisible
+ */
+
+.link-muted {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link-muted:hover,
+.link-muted:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/**
+ * Arrow links
+ */
+
+.link-arrow::after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iIzMwM0Y5RiIgZD0iTTEzLjI1IDEwTDYuMTEgMi41OGMtLjI3LS4yNy0uMjctLjcwNyAwLS45OC4yNjctLjI3LjctLjI3Ljk2OCAwbDcuODMgNy45MWMuMjY4LjI3LjI2OC43MDggMCAuOTc4bC03LjgzIDcuOTA4Yy0uMjY4LjI3LS43LjI3LS45NyAwLS4yNjctLjI3LS4yNjctLjcwNyAwLS45OEwxMy4yNSAxMHoiLz48L3N2Zz4=");
+  position: relative;
+  top: .1em;
+  display: inline-block;
+  margin: 0 0 0 .5em;
+  width: 1em;
+  height: 1em;
+  transition: .15s;
+}
+
+.link-arrow:hover,
+.link-arrow:focus {
+  text-decoration: none;
+}
+
+.link-arrow:hover::after,
+.link-arrow:focus::after {
+  transform: translate(50%,0);
+}

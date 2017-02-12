@@ -7,6 +7,7 @@
 
 @import "../../bower_components/normalize-css/normalize.css";
 @import "base.css";
+@import "links.css";
 @import "containers.css";
 @import "sections.css";
 @import "people.css";

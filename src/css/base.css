@@ -64,11 +64,12 @@ h3 {
 a {
   color: #303F9F;
   text-decoration: none;
+  transition: .15s;
 }
 
 a:hover,
 a:focus {
-  color: #303F9F; /* TODO: make color darken */
+  color: #283593;
 }
 
 

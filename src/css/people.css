@@ -36,3 +36,7 @@
 .people-caption {
   flex: 2;
 }
+
+.people-link {
+  font-style: italic;
+}
