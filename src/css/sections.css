@@ -1,4 +1,9 @@
+/**
+ * Section Headers
+ */
+
 .section-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -7,6 +12,36 @@
   background-size: cover;
   color: #fff;
 }
+
+
+/* Overlay gradient under the text */
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,.5) 0, transparent 100%);
+}
+
+
+/* Make all headings in .section-header above overlay */
+
+.section-header h1,
+.section-header h2,
+.section-header h3 {
+  position: relative;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+
+/*
+ * Main, article header
+ */
 
 .article-header {
   min-height: 100vh;
