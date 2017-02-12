@@ -1,0 +1,38 @@
+/**
+ * People module
+ */
+
+.people-item {}
+
+@media (min-width: 640px) {
+  .people-item {
+    display: flex;
+    align-items: center;
+    margin: 0 -1rem 4rem;
+  }
+
+  .people-item > * {
+    margin: 0 1rem;
+  }
+}
+
+
+/**
+ * People photos
+ */
+
+.people-photo {
+  flex: 1;
+  order: 1;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+
+/**
+ * People captions
+ */
+
+.people-caption {
+  flex: 2;
+}
