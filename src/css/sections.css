@@ -1,4 +1,14 @@
 /**
+ * Sections
+ */
+
+.section {
+  position: relative;
+  margin: 0 0 8rem;
+}
+
+
+/**
  * Section Headers
  */
 
@@ -7,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 0 0 4rem;
   min-height: 50vh;
   background: #212121 no-repeat center;
   background-size: cover;
@@ -35,14 +46,30 @@
 .section-header h3 {
   position: relative;
   margin: 0;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+  max-width: 32rem;
 }
 
 
-/*
- * Main, article header
+/**
+ * Article header
  */
 
 .article-header {
   min-height: 100vh;
+}
+
+
+/**
+ * Article footer
+ */
+
+.article-footer {
+  padding: 2rem 0;
+  background: #212121;
+  color: #fff;
+}
+
+.article-footer p {
+  margin-bottom: 0;
 }

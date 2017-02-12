@@ -2,13 +2,16 @@
  * People module
  */
 
-.people-item {}
+.people-item {
+  margin: 0 0 4rem;
+}
 
 @media (min-width: 640px) {
   .people-item {
     display: flex;
     align-items: center;
-    margin: 0 -1rem 4rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .people-item > * {
