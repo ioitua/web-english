@@ -73,3 +73,13 @@
 .article-footer p {
   margin-bottom: 0;
 }
+
+/**
+ * Article preview
+ *
+ * Space-fix class for article introduction
+ */
+
+.article-preview {
+  margin-bottom: 8rem;
+}
