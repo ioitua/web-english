@@ -5,11 +5,17 @@
  */
 
 
+/* Base */
 @import "../../bower_components/normalize-css/normalize.css";
 @import "base.css";
 @import "links.css";
+
+/* Layout */
 @import "containers.css";
 @import "sections.css";
+
+/* Components */
 @import "people.css";
 
+/* Styling */
 @import "theme.css";
