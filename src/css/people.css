@@ -3,6 +3,7 @@
  */
 
 .people-item {
+  position: relative;
   margin: 0 0 4rem;
 }
 
@@ -37,9 +38,39 @@
  */
 
 .people-caption {
+  position: relative;
   flex: 2;
 }
 
 .people-link {
   font-style: italic;
+}
+
+
+/**
+ * Carousel behavior
+ */
+
+@media (min-width: 640px) {
+  .carousel .people-item {
+    align-items: flex-end;
+    margin: -8rem 0 0;
+  }
+
+  .carousel .people-photo {
+    margin-bottom: 2.5rem;
+  }
+
+  .carousel .people-caption p {
+    margin-bottom: 0;
+  }
+
+  .carousel .people-link {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    display: block;
+    width: 50%;
+    margin: 0 0 0 2rem;
+  }
 }

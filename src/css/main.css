@@ -18,5 +18,8 @@
 @import "people.css";
 @import "quotes.css";
 
+/* JavaScript */
+@import "carousel.css";
+
 /* Styling */
 @import "theme.css";

@@ -15,10 +15,13 @@ const cssImport     = require('postcss-import');
 const nano          = require('cssnano');
 const sorting       = require('postcss-sorting');
 
+const babel         = require('gulp-babel');
+const uglify        = require('gulp-uglify');
+
 const browserSync   = require('browser-sync').create();
 
 
-gulp.task('clean', (cb) => {
+gulp.task('clean', () => {
   return del('public');
 });
 
@@ -32,6 +35,17 @@ gulp.task('css', () => {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('public/css'))
     .on('end', browserSync.reload);
+});
+
+gulp.task('js', () => {
+  return gulp.src('src/js/*')
+    .pipe(plumber())
+    // .pipe(babel({presets: ['env']}))
+    // .pipe(rename({basename: 'app'}))
+    // .pipe(gulp.dest('public/js'))
+    // .pipe(uglify())
+    // .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('html', () => {
@@ -49,7 +63,7 @@ gulp.task('images', () => {
 gulp.task('build', (cb) => {
   runSequence(
     'clean',
-    ['css', 'html', 'images'],
+    ['css', 'js', 'html', 'images'],
     cb
   );
 });
@@ -62,6 +76,7 @@ gulp.task('server', () => {
 
 gulp.task('watch', () => {
   gulp.watch('src/css/**', ['css']);
+  gulp.watch('src/js/**', ['js']);
   gulp.watch('src/**/*.html', ['html']);
 });
 
